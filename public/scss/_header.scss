@@ -1,0 +1,13 @@
+.main-header {
+	background-color: #75bff4;
+	overflow: hidden;
+	color: #eee;
+
+	.site-container {
+		display: flex;
+		flex-direction: row;
+		   justify-content: space-between;
+    	align-items: baseline;
+	}
+
+}
