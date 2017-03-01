@@ -1,14 +1,20 @@
 .main-header {
-	background-color: #75bff4;
+	background-color: #577285;
 	overflow: hidden;
 	color: #fff;
-    text-shadow: -4px -1px 0px #bc0372, -5px 1px 0px #0040b3, -6px -1px 0px #01ffff;
 
 	.site-container {
 		display: flex;
 		flex-direction: row;
-		   justify-content: space-between;
+		justify-content: space-between;
     	align-items: baseline;
+	}
+
+	h1 {
+
+		@media (max-width: 700px) {
+    		font-size: 1.25em;
+    	}
 	}
 
 }

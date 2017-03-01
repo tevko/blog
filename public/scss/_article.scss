@@ -1,0 +1,35 @@
+article {
+	padding-top: 1em;
+	padding-bottom: 1em;
+	max-width: 720px;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 1.05em;
+	margin: 0 auto;
+
+	a:not(.meta-link) {
+		background-color: orange;
+		text-decoration: none;
+		display: inline-block;
+		padding: 0 3px;
+		color: white;
+		font-weight: bold;
+		transition: .25s background-color linear;
+
+		&:hover {
+			background-color: #1e7a84;
+		}
+
+		&:visited {
+			color: gray;
+    		background-color: #c4c1c1;
+		}
+	}
+}
+
+.meta {
+	font-size: .75em;
+	margin-top: 1em;
+	color: #333;
+	border-top: solid 3px;
+}
