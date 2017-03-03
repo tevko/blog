@@ -3,6 +3,7 @@
 html {
 	box-sizing: border-box;
 	font-family: 'Open Sans', sans-serif;
+	color: #2e2e2e;
 }
 
 body {
@@ -36,3 +37,4 @@ main {
 @import 'header';
 @import 'article';
 @import 'aside';
+@import 'post-list';

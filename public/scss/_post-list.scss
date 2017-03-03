@@ -1,0 +1,39 @@
+.post-list {
+	margin: 2em 0;
+
+	p {
+		margin-top: 5px;
+		padding-left: 5px;
+
+		@media (max-width: 700px) {
+			font-size: .85em;
+		}
+	}
+
+	a {
+		display: inline-block;
+		font-size: 1.5em;
+		text-decoration: none;
+		background-color: #3A4042;
+		color: white;
+		padding: 5px;
+		border-bottom: solid 5px #e16464;
+		transition: .2s border-color linear;
+
+		&:hover {
+			border-color: #00ffdc;
+		}
+
+		&:visited {
+			border-color: #8d8d8d;
+			background-color: #acadae;
+			&:hover {
+				animation: none;
+			}
+		}
+
+		@media (max-width: 700px) {
+			font-size: .95em;
+		}
+	}
+}

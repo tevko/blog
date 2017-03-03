@@ -1,4 +1,4 @@
-article {
+.article-post {
 	padding-top: 1em;
 	padding-bottom: 1em;
 	max-width: 720px;
@@ -7,17 +7,26 @@ article {
 	font-size: 1.05em;
 	margin: 0 auto;
 
+	@media (max-width: 700px) {
+		font-size: .9em;
+	}
+
+	img {
+		display: block;
+		margin: 0 auto;
+	}
+
 	a:not(.meta-link) {
-		background-color: orange;
+		background-color: #e16464;
 		text-decoration: none;
 		display: inline-block;
 		padding: 0 3px;
 		color: white;
 		font-weight: bold;
-		transition: .25s background-color linear;
+		transition: .2s background-color linear;
 
 		&:hover {
-			background-color: #1e7a84;
+			background-color: #00ffdc;
 		}
 
 		&:visited {
@@ -32,4 +41,8 @@ article {
 	margin-top: 1em;
 	color: #333;
 	border-top: solid 3px;
+}
+
+.meta-link {
+	color: #1d586a;
 }

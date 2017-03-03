@@ -26,7 +26,7 @@ get_header(); ?>
 	</div>
 </header>
 <main>
-	<article>
+	<article class="article-post">
 		<div class="content">
 			<?php the_content(); ?>
 		</div>
@@ -50,8 +50,16 @@ get_header(); ?>
 		</div>
 	</article>
 	<aside>
-		<div class="list-container">
-
+		<div class="post-list">
+			<h3>Recent Posts</h3>
+			<?php
+				$args = array( 'numberposts' => '5', 'post__not_in' => array( $post->ID ) );
+				$recent_posts = wp_get_recent_posts( $args );
+				foreach( $recent_posts as $recent ){
+					echo '<div><a href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a></div>';
+				}
+				wp_reset_query();
+			?>
 
 		</div>
 	</aside>

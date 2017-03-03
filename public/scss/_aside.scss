@@ -2,9 +2,14 @@ aside {
 	margin: 0 auto;
 	display: flex;
 	max-width: 700px;
+	padding: 0 10px;
 
 	h3 {
-		color: #577285;
+		color: #1d586a;
 		font-weight: bold;
+	}
+
+	.post-list{
+		font-size: .9em;
 	}
 }
