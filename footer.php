@@ -12,7 +12,10 @@
 ?>
 
 <footer>
-	footers
+	<div class="site-container">
+		<a href="/blog">View all Posts</a>
+		<a href="/">About Me</a>
+	</div>
 </footer>
 
 <?php wp_footer(); ?>

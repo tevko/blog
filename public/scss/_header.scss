@@ -17,4 +17,18 @@
     	}
 	}
 
+	svg {
+
+		path {
+			transition: .2s linear fill;
+			fill: #000;
+		}
+		&:hover {
+
+			path {
+				fill: #19bdc4;
+			}
+		}
+	}
+
 }
