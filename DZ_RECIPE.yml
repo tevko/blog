@@ -1,0 +1,19 @@
+dev:
+  commands:
+  - command: mkdir -p /var/log/nginx && mkdir -p /var/cache/nginx
+    directory: blog
+    name: install cmd
+  - command: yarn install --frozen-lockfile
+    directory: blog
+    name: install cmd
+  name: ""
+  packages:
+  - 'nixpkgs.(php.withExtensions (pe: pe.enabled ++ []))'
+  - nixpkgs.libmysqlclient
+  - nixpkgs.nginx
+  - nixpkgs.nodePackages.yarn
+  - nixpkgs.nodejs_18
+  - nixpkgs.perl
+  - nixpkgs.phpPackages.composer
+  repos:
+  - https://github.com/tevko/blog
